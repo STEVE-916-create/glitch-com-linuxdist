@@ -5,7 +5,7 @@ import re
 import os
 import time
 
-PREINSTALLED = ["tar", "wget", "zlib", "zip", "python2", "gzip"]
+PREINSTALLED = ["apt", "dpkg", "debconf", "tar", "wget", "zlib", "zip", "python2", "gzip"]
 
 def parse_dependency_field(field_value):
     dependencies = []
