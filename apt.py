@@ -71,7 +71,7 @@ def get_pools(parsed_data, package_name, donewith = []):
         pools += get_pools(parsed_data, x["package"], donewith)
     return pools
 
-this_py_file_path = os.path.abspath(".")
+this_py_file_path = os.path.abspath(".")+"/"
 print("Parsing APT Packages file...")
 parsed_data = parse_packages_file(this_py_file_path+"ManticAPT")
 time.sleep(1)
