@@ -1,5 +1,5 @@
-this_py_file_path = os.path.abspath(".")+"/"
 import os
+this_py_file_path = os.path.abspath(".")+"/"
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, request, client_address, server):
