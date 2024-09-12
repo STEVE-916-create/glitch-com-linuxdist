@@ -52,7 +52,7 @@ APT Packages file since September 2023. Ubuntu Mantic.
 Seek medical attention.
 ~ $ apt _
 ```
-you can now enter "search <package>" 🔍 or "install <package>" 📲📦, this will download deb packages 📦 and download the deb dependencies 📦📦📦 automatically 👾. note that you cannot do "install <package>=<version>" 🔍💀 to select versions specifically ⚡️ because i dont wanna implement that ❌️❌️❌️
+you can now enter "search &lt;package&gt;" 🔍 or "install &lt;package&gt;" 📲📦, this will download deb packages 📦 and download the deb dependencies 📦📦📦 automatically 👾. note that you cannot do "install &lt;package&gt;=&lt;version&gt;" 🔍💀 to select versions specifically ⚡️ because i dont wanna implement that ❌️❌️❌️
 
 you can type exit 🚪🔙 to exit 🚪🔙
 
