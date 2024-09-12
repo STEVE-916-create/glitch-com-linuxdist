@@ -8,7 +8,7 @@ i then figured 🐽🍑 that `python3.7` 🐍🐍🐍🐍🐢 can host a proper 
 after allat i made sure 🧐🤓 that its possible to set it all up and install packages 📦 only using `glitch.com` 🦀🙂 (and your filesystem 💾💾💻 of course, so you can upload the `tar.gz` to the assets 📄📨)
 
 ## usage & installation 📖🛠💽
-use this if you are a nerd 🤓🤓🤓🤓🤓🤓
+use this if you a nerd 🤓🤓🤓🤓🤓🤓
 
 ### step 1 hello-node 👋👋👋👋👋
 dont grab the fastly ⚡️ version. if you did, empty 🗑🗑🗑🗑 "dependencies" and "start" inside your "package.json". if you didnt, empty 🗑🗑🗑🗑 "dependencies" and "start" inside your "package.json".
@@ -72,9 +72,11 @@ copy the link to the tar.gz 📤📡💾 asset, then in boot.sh paste it 🧾�
 
 then empty 🗑🗑🗑🗑 "dependencies" and "start" inside your "package.json".
 
-back in "package.json" change your "start" to "bash boot.sh" 👢🐶🤫🧏‍♂️🦀
+back in "package.json" change your "start" to "bash boot.sh && &lt;whatever command&gt;" 👢🐶🤫🧏‍♂️🦀
+
+for ".env" 🌳🌱 put "bash boot.sh" 👢🐶🤫🧏‍♂️🦀 at any line as long as it is an empty one 🦀🐚🌴
 
 and you're all set 👍👏👏, if you done everything correctly 😸👾🙂‍↔️
 
 ## Problems 🤦‍♂️😫💀🤡
-perl doesnt work well with this, also as of now im still testing this
+perl doesnt work well with this, you have to set the `PERLLIB` to include the perl libs inside `/tmp/glvfs/`, also as of now im still testing this
