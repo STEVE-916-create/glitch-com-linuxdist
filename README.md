@@ -52,17 +52,29 @@ APT Packages file since September 2023. Ubuntu Mantic.
 Seek medical attention.
 ~ $ apt _
 ```
-you can now enter "search &lt;package&gt;" or "install &lt;package&gt;", this will download deb packages and download the deb dependencies automatically. note that you cannot do "install &lt;package&gt;=&lt;version&gt;" to select versions specifically because i dont wanna implement that
+you can now enter "search <package>" 🔍 or "install <package>" 📲📦, this will download deb packages 📦 and download the deb dependencies 📦📦📦 automatically 👾. note that you cannot do "install <package>=<version>" 🔍💀 to select versions specifically ⚡️ because i dont wanna implement that ❌️❌️❌️
 
-you can type exit to exit
+you can type exit 🚪🔙 to exit 🚪🔙
 
-## step 3 crete de tar fs 📦📦📂⚡️💾
-run the makefile (its written in python3 so do `python3 makefile`) and watch as it compiles and summons a single "glitch.tar.gz" and host a python http server for you
+### step 3 crete de tar fs 📦📦📂⚡️💾
+run the makefile 🛠 (its written in python3 🐍🐍🐍🐍🐢 so do `python3 makefile`) and watch as it compiles 🛠 and summons ⚡️✨️ a single "glitch.tar.gz" 📦 and host a python http server for you 💾💻📡🗿
 
-you may now preview your app and download these files:
-1. "glitch.tar.gz"
-2. "boot.sh"
+you may now preview 🫣🤫🧏‍♂️ your app and download 📲💾 these files 📝:
+1. "glitch.tar.gz" 📦
+2. "boot.sh" 👢
 
-do it before `glitch.com` deletes it
+do it before `glitch.com` 🦀🙂 deletes it 🗑🗑🗑🗑
 
-## step 4 uplode tar and setup boot 👢🤓🐍📦
+### step 4 uplode tar and setup boot 👢🤓🐍📦
+upload the tar.gz 📤📡 to the assets 📦📦💾 of your project 📝💾, then upload boot.sh 👢📝 as a project file 📝📝
+
+copy the link to the tar.gz 📤📡💾 asset, then in boot.sh paste it 🧾📥✏️📋 in the `GLITCH_COM_TAR_GZ` variable 🐶🐕‍🦺
+
+then empty 🗑🗑🗑🗑 "dependencies" and "start" inside your "package.json".
+
+back in "package.json" change your "start" to "bash boot.sh" 👢🐶🤫🧏‍♂️🦀
+
+and you're all set 👍👏👏, if you done everything correctly 😸👾🙂‍↔️
+
+## Problems 🤦‍♂️😫💀🤡
+perl doesnt work well with this, also as of now im still testing this
