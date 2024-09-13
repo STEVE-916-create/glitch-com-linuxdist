@@ -60,13 +60,14 @@ def search_packages(parsed_data, package_name):
     return founds
 def get_pools(parsed_data, package_name, donewith = []):
     package = get_package(parsed_data, package_name)
-    if (package_name in donewith+PREINSTALLED) or (package is None):
+    if (package_name in donewith) or (package is None):
         return []
     donewith.append(package_name)
     pools = []
     for x in package.get("Pre-Depends", []):
         pools += get_pools(parsed_data, x["package"], donewith)
-    pools += [[package_name, package["Filename"]]]
+    if not (package_name in PREINSTALLED):
+        pools += [[package_name, package["Filename"]]]
     for x in package.get("Depends", []):
         pools += get_pools(parsed_data, x["package"], donewith)
     return pools
