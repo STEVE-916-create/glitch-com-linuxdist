@@ -10,8 +10,13 @@ print("make[1]: target is python haha")
 if os.path.exists(this_py_file_path+"deb/"):
     os.makedirs(this_py_file_path+"out/", exist_ok=True)
     print("Creating glitch.tar.gz...")
-    os.chdir(this_py_file_path+"deb")
-    os.system("tar -czf "+this_py_file_path+"out/glitch.tar.gz "+this_py_file_path+"deb/*.deb")
+    with open(this_py_file_path+"compile.cache.sh", "wt") as f:
+        f.write("#!/usr/bin/bash\n")
+        f.write("\n")
+        f.write("cd "+this_py_file_path+"deb\n")
+        f.write("tar -czf "+this_py_file_path+"out/glitch.tar.gz "+this_py_file_path+"deb/*.deb\n")
+    os.system("bash "+this_py_file_path+"compile.cache.sh")
+    os.system("rm "+this_py_file_path+"compile.cache.sh")
     print("Summoning glitch.tar.gz...")
     print("Writing boot.sh...")
     with open(this_py_file_path+"out/boot.sh", "wt") as f:
